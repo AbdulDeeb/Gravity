@@ -1,0 +1,35 @@
+# Comments start with #
+# If subjectName is "junk" overwrites
+# Specify BaseDir with the backslash as follows
+BaseDir: dataset\junk\
+
+SubjectName: AL_2
+IOD: 55
+Phase: 2 #1 = Vz, 2 = Vy, 
+
+# number of repetitions
+Repetitions: 1
+RandomizeWithoutConsecutive: 0
+# randomize levels of factors (1) or not (0)
+Randomize: 1
+
+#########################################
+# Here follows the list of all factors, they all start with "f"
+#########################################
+fGravity:  3.70 9.81 24.79 
+#fSpeed:  5.2 6.8 
+fOrder: 1 2
+
+# Staircase Parameters - the following staircase(s) will be created for each combination of factor levels
+sStairNumber: 1
+sStairAscending: 1
+sStairCorrectAnswers: 1
+sStairMaxInversions: 12
+sStairMaxTrials: 100
+sStairClampLower: 1
+sStairClampUpper: 30
+sStairMaxClampHits: 5
+sStairStartStates: 8
+sStairPositiveStep: 2,1.5,0.5,0.2
+sStairNegativeStep: 2,1.5,0.5,0.2
+
